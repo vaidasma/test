@@ -28,7 +28,7 @@ test_on_{{ mobile.name }}:
         - utr\utr --suite=playmode --platform={{ mobile.name }} --testproject=Screen-Resolution --editor-location=WindowsEditor --artifacts_path=upm-ci~\test-results --scripting-backend=il2cpp --timeout=1200 || exit 0
         - start %ANDROID_SDK_ROOT%\platform-tools\adb.exe kill-server
         - git clone git@github.com:Unity-Technologies/utr-tracker.git
-        - python utr-tracker\utr-tracker.py aleksandras
+        - python utr-tracker\utr-tracker.py aleksandras //Name
     artifacts:
       logs:
         paths:
